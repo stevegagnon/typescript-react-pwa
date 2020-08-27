@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>typescript-react-pwa</title>
   <link rel="manifest" href="/manifest.webmanifest">
-  $css
 </head>
 
 <body>
+  <div id="root"></div>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script type="module" src="app/index.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
+      navigator.serviceWorker.register('service-worker/index.js');
     }
   </script>
-  $bundles
 </body>
 
 </html>
