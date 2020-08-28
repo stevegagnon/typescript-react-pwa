@@ -1,6 +1,6 @@
-import * as React from 'react';
+import { h } from 'preact';
 
-export function Panel({ children }: React.PropsWithChildren<{}>) {
+export function Panel({ children }) {
   return (
     <div>{children}</div>
   );

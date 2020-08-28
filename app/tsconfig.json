@@ -5,6 +5,7 @@
       "dom"
     ],
     "jsx": "react",
+    "jsxFactory": "h",
     "target": "esnext",
     "moduleResolution": "node",
     "baseUrl": "./",

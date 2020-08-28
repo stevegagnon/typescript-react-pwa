@@ -1,14 +1,15 @@
-import * as React from 'react';
-import { Link } from "react-router-dom";
+import { h } from 'preact';
+import { useContext } from "preact/hooks";
+import { Link } from 'preact-router/match';
 import Panel from '@components/panel';
 import { StringsContext } from '@providers/strings';
 
 export function One() {
-  const strings = React.useContext(StringsContext);
+  const strings = useContext(StringsContext);
   return (
     <div className="one">
       <Panel>
-        <Link to="/two">{strings.two}</Link>
+        <Link href="/two">{strings.two}</Link>
       </Panel>
     </div>
   );

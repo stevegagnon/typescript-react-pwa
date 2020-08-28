@@ -1,27 +1,15 @@
-import * as React from "react";
-import {
-  BrowserRouter,
-  Switch,
-  Route
-} from "react-router-dom";
+import { h } from 'preact';
+import  PreactRouter from 'preact-router';
 import One from './one';
 import Two from './two';
 
 export function Router() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/">
-          <One />
-        </Route>
-        <Route path="/one">
-          <One />
-        </Route>
-        <Route path="/two">
-          <Two />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <PreactRouter>
+      <One path="/" />
+      <One path="/one" />
+      <Two path="/two" />
+    </PreactRouter>
   );
 }
 
