@@ -1,4 +1,3 @@
-import './_panel.css';
 import * as React from 'react';
 
 export function Panel({ children }: React.PropsWithChildren<{}>) {

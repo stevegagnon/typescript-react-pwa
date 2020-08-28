@@ -11,6 +11,9 @@ export function Router() {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/">
+          <One />
+        </Route>
         <Route path="/one">
           <One />
         </Route>

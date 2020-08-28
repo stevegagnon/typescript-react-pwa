@@ -1,7 +1,8 @@
-import { cacheNames } from 'workbox-core';
 
-self.addEventListener('install', (event) => {
-  const urls = [/* ... */];
-  const cacheName = cacheNames.runtime;
-  event.waitUntil(caches.open(cacheName).then((cache) => cache.addAll(urls)));
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
+    })
+  );
 });

@@ -5,16 +5,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>typescript-react-pwa</title>
-  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
   <div id="root"></div>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script type="module" src="app/index.js"></script>
+  <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker/index.js');
+      navigator.serviceWorker.register('service-worker.js');
     }
   </script>
 </body>

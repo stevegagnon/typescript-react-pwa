@@ -1,4 +1,6 @@
 body {
   background: rgb(50, 50, 50);
   color: rgb(200, 200, 0);
+  font-size: 100px;
+  text-align: center;
 }
